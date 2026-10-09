@@ -308,11 +308,15 @@ Every concept site shares the same underlying service catalog and government-con
 ## Repository structure
 
 ```
-concepts/           Per-concept content (Home / Services / Government Contracting) in WordPress block markup
+concepts/           Per-concept content (Home / Services / Government Contracting / Security & Trust) in WordPress block markup
 concepts-data.js    Structured data for all 13 concepts (summaries, headlines, CTAs, positioning strategy, etc.)
 govcon-data.js      Shared government-contracting entity and registration data
 service-catalog.js  Shared CompTIA-grounded service catalog
 ```
+
+## Security
+
+HDSC's public security statement and vulnerability-reporting process are in [SECURITY.md](SECURITY.md); each concept has a "Security & Trust" page (`concepts/<id>/security-and-trust.html`). The internal Enterprise Cybersecurity Plan behind them is not published here. HDSC describes its practices as aligned with NIST SP 800-53/800-171 and does not claim CMMC, FedRAMP, or ISO 27001 certification.
 
 ## Status
 

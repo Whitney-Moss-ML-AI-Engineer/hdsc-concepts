@@ -27,7 +27,7 @@ const ENTITIES = [
     },
     sic: ["7379 — Computer Related Services, NEC", "8711 — Engineering Services", "7371 — Computer Programming Services", "8741 — Management Services"],
     unspsc: ["81111500 — Software or hardware engineering", "81112200 — Internet support services", "43232300 — Computer modeling software", "80101500 — Business and corporate management consulting"],
-    certificationsClaimed: ["NIST RMF / CSF alignment", "ITIL service-management practices", "PMI program/project management", "Agile / Scrum delivery", "ISO 27001-aligned practices", "FedRAMP-ready security posture", "CompTIA-certified technical staff (A+, Network+, Security+, Server+, Cloud+, CySA+, Project+, Data+/AI, DataSys+)"],
+    certificationsClaimed: ["NIST RMF / CSF alignment", "ITIL service-management practices", "PMI program/project management", "Agile / Scrum delivery", "ISO 27001-aligned practices", "NIST SP 800-53-aligned security practices (not FedRAMP authorized)", "CompTIA-certified technical staff (A+, Network+, Security+, Server+, Cloud+, CySA+, Project+, Data+/AI, DataSys+)"],
     tradeOrgAlignment: ["IEEE", "ISACA", "CompTIA", "ITIL / AXELOS", "PMI"],
   },
   {
