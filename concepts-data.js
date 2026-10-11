@@ -1,6 +1,7 @@
 // HDSC Multi-Concept Website Design Exploration — concept content and scoring data.
+// NAMING: concept names were replaced on 2026-10-10 with one-word names (see NAMING.md in hdsc-concepts for the old-to-new map).
 // 13 concepts: the original 12 Archetype x Visual-Theme concepts, plus a 13th concept
-// ("The Enterprise Grid") built to match the look and feel of the live Wix site at
+// ("Techgrid") built to match the look and feel of the live Wix site at
 // https://sweetbrandclothingco.wixsite.com/heavy-duty-securit-2
 
 const FIELD_ORDER = [
@@ -36,7 +37,7 @@ const FIELD_ORDER = [
 
 const CONCEPTS = [
   {
-    id: "signal", code: "SIG", name: "The Signal", archetype: "Hero", theme: "Sliver of Light",
+    id: "signal", code: "SIG", name: "Netpulse", archetype: "Hero", theme: "Sliver of Light",
     summary: "HDSC as the force that steps in and resolves the technology crisis before it becomes a business crisis. The flagship, demand-generation concept for the master HDSC brand.",
     strategicPurpose: "Serve as the flagship marketing site and primary demand-generation engine for the master HDSC brand across both on-demand and contract service lines.",
     targetCustomer: "Enterprise and government operations leaders and IT managers facing active or recurring technology risk.",
@@ -78,7 +79,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Pairs the response speed of an on-demand platform with the documentation and compliance rigor enterprise and government buyers require.",
   },
   {
-    id: "blueprint", code: "BLU", name: "The Blueprint", archetype: "Sage", theme: "Isometric",
+    id: "blueprint", code: "BLU", name: "Infostrata", archetype: "Sage", theme: "Isometric",
     summary: "HDSC as the engineering authority that documents, diagrams, and standardizes IT environments — a concept built around demonstrated technical mastery.",
     strategicPurpose: "Win technically sophisticated buyers (engineering leads, CTOs, government technical evaluators) who scrutinize methodology before price.",
     targetCustomer: "Technical decision-makers evaluating a contract MSP or systems-engineering partner on rigor, not just availability.",
@@ -120,7 +121,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Makes HDSC's engineering methodology, normally invisible to the buyer, the actual visual and narrative center of the site.",
   },
   {
-    id: "onyourside", code: "OYS", name: "On Your Side", archetype: "Caregiver", theme: "Figure Isolation",
+    id: "onyourside", code: "OYS", name: "Opshield", archetype: "Caregiver", theme: "Figure Isolation",
     summary: "HDSC as the protector of small-business and nonprofit operators who feel overwhelmed and underserved by enterprise-focused IT vendors.",
     strategicPurpose: "Build trust and warmth with smaller, less technical buyers who need reassurance as much as resolution.",
     targetCustomer: "Small-business owners, office managers, and nonprofit administrators without in-house IT staff.",
@@ -162,7 +163,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Wins the segment of buyers who are put off by technical MSP marketing and want to feel cared for, not sold to.",
   },
   {
-    id: "commandline", code: "CMD", name: "Command Line", archetype: "Magician", theme: "Redline",
+    id: "commandline", code: "CMD", name: "Netforge", archetype: "Magician", theme: "Redline",
     summary: "HDSC as the transformative technical force that turns a chaotic, failing environment into a controlled, high-performing one.",
     strategicPurpose: "Appeal to buyers mid-crisis or mid-transformation who want a decisive technical intervention, not a vendor relationship.",
     targetCustomer: "IT directors undertaking a major modernization, migration, or security overhaul under pressure.",
@@ -204,7 +205,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Speaks directly to the buyer who already knows something must change and wants a decisive partner, not a slow conversation.",
   },
   {
-    id: "thefix", code: "FIX", name: "The Fix", archetype: "Outlaw", theme: "Redline",
+    id: "thefix", code: "FIX", name: "Techtonic", archetype: "Outlaw", theme: "Redline",
     summary: "HDSC positioned against bloated, slow-moving IT vendors — a disruptive, no-nonsense alternative for buyers burned by bad MSPs.",
     strategicPurpose: "Win switchers — buyers actively dissatisfied with an incumbent MSP or internal IT function.",
     targetCustomer: "Operations leaders who have already been let down by a slow or unresponsive IT vendor.",
@@ -236,7 +237,7 @@ const CONCEPTS = [
       text: "#EDEDED",
       mutedText: "#9C9C9C",
       onPrimary: "#FFFFFF",
-      desire: "The darkest, highest-contrast palette in the family — near-black with a hotter red than Command Line and stark white used for literal comparison 'X' marks against competitor failures. This maximum-contrast pairing is deliberately combative: it creates desire through loss aversion, dramatizing exactly what a bad vendor costs before the red CTA offers the fix, matching the Outlaw archetype's disruptive, no-excuses tone.",
+      desire: "The darkest, highest-contrast palette in the family — near-black with a hotter red than Netforge and stark white used for literal comparison 'X' marks against competitor failures. This maximum-contrast pairing is deliberately combative: it creates desire through loss aversion, dramatizing exactly what a bad vendor costs before the red CTA offers the fix, matching the Outlaw archetype's disruptive, no-excuses tone.",
     },
     conversionStrategy: "Comparison table is the primary conversion driver, converting dissatisfaction directly into action.",
     fomoStrategy: "'How much is your current vendor costing you in downtime?' calculator creates urgency through quantified loss.",
@@ -246,7 +247,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Converts competitor dissatisfaction directly into HDSC demand rather than competing on generic value propositions.",
   },
   {
-    id: "frontier", code: "FRO", name: "Frontier", archetype: "Explorer", theme: "Sliver of Light",
+    id: "frontier", code: "FRO", name: "Nexora", archetype: "Explorer", theme: "Sliver of Light",
     summary: "HDSC as the partner for organizations expanding into new technical territory — cloud migration, AI adoption, new facilities, new contracts.",
     strategicPurpose: "Capture growth-stage buyers whose need is driven by expansion rather than crisis or dissatisfaction.",
     targetCustomer: "Growing companies and agencies scaling infrastructure, adopting new technology, or standing up new locations/contracts.",
@@ -284,11 +285,11 @@ const CONCEPTS = [
     fomoStrategy: "Tied to the client's own deadlines (contract start dates, funding timelines) rather than artificial scarcity.",
     socialProof: "Growth-stage case studies showing a client's infrastructure scaling alongside their business over time.",
     retentionStrategy: "Ongoing roadmap reviews as the company continues to grow keep HDSC embedded long-term.",
-    brandRecognition: "The forward-light/horizon motif distinguishes Frontier from The Signal's crisis-response light treatment.",
+    brandRecognition: "The forward-light/horizon motif distinguishes Nexora from Netpulse's crisis-response light treatment.",
     competitiveAdvantage: "Positions HDSC ahead of the client's need rather than reacting to it, a rare stance among MSP competitors.",
   },
   {
-    id: "nopatience", code: "NOP", name: "No Patience for Bureaucracy", archetype: "Jester", theme: "Redline",
+    id: "nopatience", code: "NOP", name: "Opsline", archetype: "Jester", theme: "Redline",
     summary: "An irreverent, high-energy concept that pokes fun at slow government and enterprise IT procurement while still delivering credentialed, compliant work.",
     strategicPurpose: "Cut through procurement fatigue with humor and directness, primarily as a paid-social and landing-page concept.",
     targetCustomer: "Procurement-weary buyers in government-adjacent or enterprise environments tired of slow vendor processes.",
@@ -330,7 +331,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Differentiates HDSC in a category where virtually no competitor uses humor, while still proving full compliance.",
   },
   {
-    id: "builtby", code: "BLT", name: "Built By", archetype: "Creator", theme: "Isometric",
+    id: "builtby", code: "BLT", name: "Stackcore", archetype: "Creator", theme: "Isometric",
     summary: "HDSC as a builder of custom technical solutions — software, infrastructure, and systems engineered specifically for the client's problem.",
     strategicPurpose: "Win custom-engineering and software-engineering engagements that a generic MSP positioning would not capture.",
     targetCustomer: "Organizations needing bespoke systems, software, or infrastructure rather than standardized support.",
@@ -368,11 +369,11 @@ const CONCEPTS = [
     fomoStrategy: "Minimal; relies on portfolio quality and specificity rather than urgency messaging.",
     socialProof: "Detailed build case studies with problem/solution/outcome structure.",
     retentionStrategy: "Post-launch support and iteration contracts are offered as a natural extension of the build relationship.",
-    brandRecognition: "The build-pipeline isometric graphic is a distinct visual cousin to The Blueprint's infrastructure diagrams.",
+    brandRecognition: "The build-pipeline isometric graphic is a distinct visual cousin to Infostrata's infrastructure diagrams.",
     competitiveAdvantage: "Captures custom-engineering demand that a generic 'IT support' positioning would miss entirely.",
   },
   {
-    id: "anyonesengineer", code: "ANE", name: "Anyone's Engineer", archetype: "Everyman", theme: "Essentialism",
+    id: "anyonesengineer", code: "ANE", name: "Techwise", archetype: "Everyman", theme: "Essentialism",
     summary: "A plain, approachable concept presenting HDSC as straightforward, honest, and accessible IT support for any size organization.",
     strategicPurpose: "Serve as a broad, low-friction entry point for buyers who are not strongly segmented by crisis, growth, or technical sophistication.",
     targetCustomer: "General small-to-mid-size business and organizational buyers without a strong existing vendor relationship.",
@@ -414,7 +415,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Captures buyers fatigued by oversold MSP marketing who want a plainly honest alternative.",
   },
   {
-    id: "levelup", code: "LVL", name: "Level Up", archetype: "Innocent", theme: "Redline",
+    id: "levelup", code: "LVL", name: "Cloudspire", archetype: "Innocent", theme: "Redline",
     summary: "An experimental concept for the professional recruiting/marketplace side of HDSC, framing career growth as a simple, optimistic, game-like progression rather than a corporate ladder.",
     strategicPurpose: "Serve the professional acquisition funnel (technicians and engineers joining the HDSC marketplace), scoped away from the main customer-facing brand.",
     targetCustomer: "Technicians and engineers seeking flexible, meritocratic work and a visible path to higher-paying opportunities.",
@@ -446,7 +447,7 @@ const CONCEPTS = [
       text: "#1F2430",
       mutedText: "#656B7A",
       onPrimary: "#FFFFFF",
-      desire: "A light, bright reinterpretation of the Redline family for a career-growth audience: a softened coral-red keeps brand lineage without Command Line's severity, paired with a leveling-up green and achievement gold used sparingly for milestones and badges. Light backgrounds and game-like accent colors create desire through aspiration and visible progress rather than urgency, matching the Innocent archetype's optimistic tone.",
+      desire: "A light, bright reinterpretation of the Redline family for a career-growth audience: a softened coral-red keeps brand lineage without Netforge's severity, paired with a leveling-up green and achievement gold used sparingly for milestones and badges. Light backgrounds and game-like accent colors create desire through aspiration and visible progress rather than urgency, matching the Innocent archetype's optimistic tone.",
     },
     conversionStrategy: "Passport creation (registration) is the primary conversion, not a sale.",
     fomoStrategy: "Positive FOMO — 'opportunities matching your skills' counters create a sense of momentum rather than scarcity anxiety.",
@@ -456,7 +457,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Treats recruiting as a product experience with the same design rigor as the customer-facing marketplace, which most competitors do not do.",
   },
   {
-    id: "plainlyput", code: "PLP", name: "Plainly Put", archetype: "Lover", theme: "Figure Isolation",
+    id: "plainlyput", code: "PLP", name: "Infrasync", archetype: "Lover", theme: "Figure Isolation",
     summary: "A warm, relationship-first concept emphasizing genuine care and plain-spoken closeness with clients, distinct from Caregiver's protective framing through a more personal, devoted tone.",
     strategicPurpose: "Deepen retention and referral among existing clients by emphasizing the relationship itself as the product.",
     targetCustomer: "Existing clients and warm referrals who value a close, personal vendor relationship over transactional support.",
@@ -478,7 +479,7 @@ const CONCEPTS = [
     homepageSections: "Warm hero with team imagery, relationship-tenure stats, client story carousel, services-through-relationship framing.",
     dashboard: "A relationship timeline view showing engagement history alongside standard ticket/service data.",
     mobileExperience: "Team photography and story content are prioritized in the mobile layout over dense technical detail.",
-    visualDesign: "Figure Isolation treatment shared with On Your Side, but warmer color balance and closer, more personal photography/illustration framing.",
+    visualDesign: "Figure Isolation treatment shared with Opshield, but warmer color balance and closer, more personal photography/illustration framing.",
     colorPalette: {
       label: "Figure Isolation — Warm Closeness",
       background: "#FBF5F0",
@@ -488,17 +489,17 @@ const CONCEPTS = [
       text: "#332420",
       mutedText: "#6B5349",
       onPrimary: "#FFFFFF",
-      desire: "Shares On Your Side's Figure Isolation visual family but shifts the balance from cool periwinkle to warm terracotta on a cream ground — the color-temperature equivalent of a closer, more personal relationship. Terracotta and warm cream read as human and devoted rather than corporate, creating desire through intimacy and genuine care for the Lover archetype's relationship-first positioning.",
+      desire: "Shares Opshield's Figure Isolation visual family but shifts the balance from cool periwinkle to warm terracotta on a cream ground — the color-temperature equivalent of a closer, more personal relationship. Terracotta and warm cream read as human and devoted rather than corporate, creating desire through intimacy and genuine care for the Lover archetype's relationship-first positioning.",
     },
     conversionStrategy: "Referral generation and renewal are the primary conversions this concept is optimized for.",
     fomoStrategy: "Not applicable by design; this concept intentionally avoids urgency or scarcity framing.",
     socialProof: "Long-tenure client relationship stories, explicitly citing years of partnership.",
     retentionStrategy: "The core purpose of the concept; relationship continuity itself is the retention strategy.",
-    brandRecognition: "Shares Figure Isolation's visual language with On Your Side, differentiated by warmer tone and longer-form relationship storytelling.",
+    brandRecognition: "Shares Figure Isolation's visual language with Opshield, differentiated by warmer tone and longer-form relationship storytelling.",
     competitiveAdvantage: "Converts satisfied clients into long-term accounts and referral sources more deliberately than any other concept.",
   },
   {
-    id: "standard", code: "STD", name: "The Standard", archetype: "Ruler", theme: "Essentialism",
+    id: "standard", code: "STD", name: "Cybertrust", archetype: "Ruler", theme: "Essentialism",
     summary: "HDSC as the disciplined, compliant, standards-driven authority — the concept best suited to underpin the transactional marketplace and account product beneath the marketing site.",
     strategicPurpose: "Provide the structural, trust-maximizing foundation for account creation, contracting, and compliance-sensitive transactions.",
     targetCustomer: "Procurement officers, compliance reviewers, and government/enterprise contracting officials.",
@@ -540,7 +541,7 @@ const CONCEPTS = [
     competitiveAdvantage: "Directly answers the compliance and governance scrutiny that other concepts in the portfolio do not attempt to satisfy.",
   },
   {
-    id: "enterprisegrid", code: "ENT", name: "The Enterprise Grid", archetype: "Ruler", theme: "Corporate Grid (new — matches live site)",
+    id: "enterprisegrid", code: "ENT", name: "Techgrid", archetype: "Ruler", theme: "Corporate Grid (new — matches live site)",
     summary: "A concept built to match the visual language of HDSC's current live website: a dark navy navigation bar over clean white content, a card-grid of strategic business units, and an authoritative, compliance-forward enterprise tone.",
     strategicPurpose: "Preserve continuity with the company's existing live site and current market-facing identity while bringing it into the same structured concept framework as the other 12 concepts, so it can be fairly compared and, if desired, refined rather than replaced.",
     targetCustomer: "Enterprise and government buyers evaluating HDSC across a broad portfolio of business units — IT/MSP, cybersecurity, cloud, systems and software engineering, data and analytics, ML/AI security, and aerospace and defense.",

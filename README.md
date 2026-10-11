@@ -15,19 +15,19 @@ Each concept is a fully independent, published WordPress.com site with its own H
 
 | # | Concept | Code | Hero Headline | Live Site |
 |---|---------|------|----------------|-----------|
-| 1 | The Signal | SIG | Technology Problems Don't Wait. Neither Should You. | [hdscsignal.wordpress.com](https://hdscsignal.wordpress.com) |
-| 2 | The Blueprint | BLU | Engineered Infrastructure. Documented Discipline. | [hdscblueprint.wordpress.com](https://hdscblueprint.wordpress.com) |
-| 3 | On Your Side | OYS | You Shouldn't Have to Understand IT to Be Protected By It. | [hdsconyourside.wordpress.com](https://hdsconyourside.wordpress.com) |
-| 4 | Command Line | CMD | We Don't Patch Problems. We Transform Systems. | [hdsccommandline.wordpress.com](https://hdsccommandline.wordpress.com) |
-| 5 | The Fix | FIX | Your Last IT Vendor Made Excuses. We Make Fixes. | [hdscthefix.wordpress.com](https://hdscthefix.wordpress.com) |
-| 6 | Frontier | FRO | Growing Fast? Your Infrastructure Should Keep Up. | [hdscfrontier.wordpress.com](https://hdscfrontier.wordpress.com) |
-| 7 | No Patience for Bureaucracy | NOP | We Filled Out the Forms So You Don't Have To. | [hdscnopatience.wordpress.com](https://hdscnopatience.wordpress.com) |
-| 8 | Built By | BLT | Built for Your Problem. Not Someone Else's. | [hdscbuiltby.wordpress.com](https://hdscbuiltby.wordpress.com) |
-| 9 | Anyone's Engineer | ANE | IT Support That Just Works. For Everyone. | [hdscanyonesengineer.wordpress.com](https://hdscanyonesengineer.wordpress.com) |
-| 10 | Level Up | LVL | Do Good Work. Watch Your Opportunities Grow. | [hdsclevelup.wordpress.com](https://hdsclevelup.wordpress.com) |
-| 11 | Plainly Put | PLP | We Don't Just Support Your Systems. We Know Them. | [hdscplainlyput.wordpress.com](https://hdscplainlyput.wordpress.com) |
-| 12 | The Standard | STD | Standards You Can Verify. Work You Can Trust. | [hdscthestandard0.wordpress.com](https://hdscthestandard0.wordpress.com) |
-| 13 | The Enterprise Grid | ENT | Elite Security & IT Solutions. | [hdscenterprisegrid.wordpress.com](https://hdscenterprisegrid.wordpress.com) |
+| 1 | Netpulse | SIG | Technology Problems Don't Wait. Neither Should You. | [hdscsignal.wordpress.com](https://hdscsignal.wordpress.com) |
+| 2 | Infostrata | BLU | Engineered Infrastructure. Documented Discipline. | [hdscblueprint.wordpress.com](https://hdscblueprint.wordpress.com) |
+| 3 | Opshield | OYS | You Shouldn't Have to Understand IT to Be Protected By It. | [hdsconyourside.wordpress.com](https://hdsconyourside.wordpress.com) |
+| 4 | Netforge | CMD | We Don't Patch Problems. We Transform Systems. | [hdsccommandline.wordpress.com](https://hdsccommandline.wordpress.com) |
+| 5 | Techtonic | FIX | Your Last IT Vendor Made Excuses. We Make Fixes. | [hdscthefix.wordpress.com](https://hdscthefix.wordpress.com) |
+| 6 | Nexora | FRO | Growing Fast? Your Infrastructure Should Keep Up. | [hdscfrontier.wordpress.com](https://hdscfrontier.wordpress.com) |
+| 7 | Opsline | NOP | We Filled Out the Forms So You Don't Have To. | [hdscnopatience.wordpress.com](https://hdscnopatience.wordpress.com) |
+| 8 | Stackcore | BLT | Built for Your Problem. Not Someone Else's. | [hdscbuiltby.wordpress.com](https://hdscbuiltby.wordpress.com) |
+| 9 | Techwise | ANE | IT Support That Just Works. For Everyone. | [hdscanyonesengineer.wordpress.com](https://hdscanyonesengineer.wordpress.com) |
+| 10 | Cloudspire | LVL | Do Good Work. Watch Your Opportunities Grow. | [hdsclevelup.wordpress.com](https://hdsclevelup.wordpress.com) |
+| 11 | Infrasync | PLP | We Don't Just Support Your Systems. We Know Them. | [hdscplainlyput.wordpress.com](https://hdscplainlyput.wordpress.com) |
+| 12 | Cybertrust | STD | Standards You Can Verify. Work You Can Trust. | [hdscthestandard0.wordpress.com](https://hdscthestandard0.wordpress.com) |
+| 13 | Techgrid | ENT | Elite Security & IT Solutions. | [hdscenterprisegrid.wordpress.com](https://hdscenterprisegrid.wordpress.com) |
 
 ## Color palettes
 
@@ -35,23 +35,23 @@ Each concept carries its own color system, derived from its assigned visual them
 
 | Concept | Background | Surface | Primary | Secondary | Text |
 |---|---|---|---|---|---|
-| The Signal (SIG) | `#0B1220` | `#121A2E` | `#00D9FF` | `#7C5CFF` | `#F4F7FB` |
-| The Blueprint (BLU) | `#0E1B2E` | `#13233B` | `#2F6FD1` | `#9FD8FF` | `#EAF2FF` |
-| On Your Side (OYS) | `#FAF9FC` | `#F0EEFA` | `#6C7FD8` | `#E8A33D` | `#2A2D3A` |
-| Command Line (CMD) | `#171717` | `#1F1F1F` | `#E8142A` | `#FF5A3C` | `#F5F5F5` |
-| The Fix (FIX) | `#0D0D0D` | `#191919` | `#FF1E3C` | `#FFFFFF` | `#EDEDED` |
-| Frontier (FRO) | `#0E1B2B` | `#15283D` | `#FF8A3D` | `#2FD9C4` | `#F5FAFA` |
-| No Patience for Bureaucracy (NOP) | `#161616` | `#202020` | `#FF3B30` | `#FFD23F` | `#FAFAFA` |
-| Built By (BLT) | `#0F1B2E` | `#152440` | `#2F6FD1` | `#FFB13C` | `#EAF2FF` |
-| Anyone's Engineer (ANE) | `#FFFFFF` | `#F3F5F8` | `#1B3A6B` | `#3D8BFF` | `#1A1A1A` |
-| Level Up (LVL) | `#FFFFFF` | `#F7F7FB` | `#FF4D5E` | `#3DDC97` | `#1F2430` |
-| Plainly Put (PLP) | `#FBF5F0` | `#F3E6DC` | `#C4685A` | `#7B86C7` | `#332420` |
-| The Standard (STD) | `#FFFFFF` | `#F4F5F7` | `#0B2447` | `#C9A227` | `#0B0B0B` |
-| The Enterprise Grid (ENT) | `#FFFFFF` | `#F5F7FA` | `#0A1F44` | `#1E6FD9` | `#16213E` |
+| Netpulse (SIG) | `#0B1220` | `#121A2E` | `#00D9FF` | `#7C5CFF` | `#F4F7FB` |
+| Infostrata (BLU) | `#0E1B2E` | `#13233B` | `#2F6FD1` | `#9FD8FF` | `#EAF2FF` |
+| Opshield (OYS) | `#FAF9FC` | `#F0EEFA` | `#6C7FD8` | `#E8A33D` | `#2A2D3A` |
+| Netforge (CMD) | `#171717` | `#1F1F1F` | `#E8142A` | `#FF5A3C` | `#F5F5F5` |
+| Techtonic (FIX) | `#0D0D0D` | `#191919` | `#FF1E3C` | `#FFFFFF` | `#EDEDED` |
+| Nexora (FRO) | `#0E1B2B` | `#15283D` | `#FF8A3D` | `#2FD9C4` | `#F5FAFA` |
+| Opsline (NOP) | `#161616` | `#202020` | `#FF3B30` | `#FFD23F` | `#FAFAFA` |
+| Stackcore (BLT) | `#0F1B2E` | `#152440` | `#2F6FD1` | `#FFB13C` | `#EAF2FF` |
+| Techwise (ANE) | `#FFFFFF` | `#F3F5F8` | `#1B3A6B` | `#3D8BFF` | `#1A1A1A` |
+| Cloudspire (LVL) | `#FFFFFF` | `#F7F7FB` | `#FF4D5E` | `#3DDC97` | `#1F2430` |
+| Infrasync (PLP) | `#FBF5F0` | `#F3E6DC` | `#C4685A` | `#7B86C7` | `#332420` |
+| Cybertrust (STD) | `#FFFFFF` | `#F4F5F7` | `#0B2447` | `#C9A227` | `#0B0B0B` |
+| Techgrid (ENT) | `#FFFFFF` | `#F5F7FA` | `#0A1F44` | `#1E6FD9` | `#16213E` |
 
 ## Concept summaries
 
-### 1. The Signal (SIG)
+### 1. Netpulse (SIG)
 
 **Live site:** [https://hdscsignal.wordpress.com](https://hdscsignal.wordpress.com)
 
@@ -70,7 +70,7 @@ HDSC as the force that steps in and resolves the technology crisis before it bec
 - Background `#0B1220` · Surface `#121A2E` · Primary `#00D9FF` · Secondary `#7C5CFF` · Text `#F4F7FB`
 - *Why it creates desire:* A single electric-cyan shaft of light cutting a near-black navy field stages the brand's core promise visually: clarity arriving out of a dark situation. Violet is reserved for secondary emphasis (trust badges, credentials). The high contrast between void-black and glowing cyan triggers an approach response — relief and confidence — rather than alarm, so the hero reads as rescue, not crisis.
 
-### 2. The Blueprint (BLU)
+### 2. Infostrata (BLU)
 
 **Live site:** [https://hdscblueprint.wordpress.com](https://hdscblueprint.wordpress.com)
 
@@ -89,7 +89,7 @@ HDSC as the engineering authority that documents, diagrams, and standardizes IT 
 - Background `#0E1B2E` · Surface `#13233B` · Primary `#2F6FD1` · Secondary `#9FD8FF` · Text `#EAF2FF`
 - *Why it creates desire:* Deep blueprint-navy with crisp white-blue line accents borrows the literal visual grammar of engineering blueprints and CAD drawings, so competence reads instantly and non-verbally. The restrained two-blue system (no warm colors) keeps attention on precision and documentation rather than emotion — appropriate for a Sage archetype selling trust through demonstrated mastery.
 
-### 3. On Your Side (OYS)
+### 3. Opshield (OYS)
 
 **Live site:** [https://hdsconyourside.wordpress.com](https://hdsconyourside.wordpress.com)
 
@@ -108,7 +108,7 @@ HDSC as the protector of small-business and nonprofit operators who feel overwhe
 - Background `#FAF9FC` · Surface `#F0EEFA` · Primary `#6C7FD8` · Secondary `#E8A33D` · Text `#2A2D3A`
 - *Why it creates desire:* A soft, light periwinkle ground (rather than the Signal/Blueprint dark navy) signals safety and approachability for small-business and nonprofit buyers who feel overlooked by enterprise IT vendors. A single warm amber accent represents the 'protected light' around the human silhouette motif — warmth breaks through the cool palette the way help arrives for someone who has been struggling alone.
 
-### 4. Command Line (CMD)
+### 4. Netforge (CMD)
 
 **Live site:** [https://hdsccommandline.wordpress.com](https://hdsccommandline.wordpress.com)
 
@@ -127,7 +127,7 @@ HDSC as the transformative technical force that turns a chaotic, failing environ
 - Background `#171717` · Surface `#1F1F1F` · Primary `#E8142A` · Secondary `#FF5A3C` · Text `#F5F5F5`
 - *Why it creates desire:* Charcoal-black with a decisive red accent is the classic 'mark-up and correct' color pairing — it visually says something was wrong and has now been fixed. The red-to-ember gradient on before/after panels dramatizes transformation rather than danger, giving the Magician archetype's 'we transform systems' claim a color system that feels like decisive, expert intervention.
 
-### 5. The Fix (FIX)
+### 5. Techtonic (FIX)
 
 **Live site:** [https://hdscthefix.wordpress.com](https://hdscthefix.wordpress.com)
 
@@ -144,9 +144,9 @@ HDSC positioned against bloated, slow-moving IT vendors — a disruptive, no-non
 
 **Color palette — Redline — Confrontational Contrast:**
 - Background `#0D0D0D` · Surface `#191919` · Primary `#FF1E3C` · Secondary `#FFFFFF` · Text `#EDEDED`
-- *Why it creates desire:* The darkest, highest-contrast palette in the family — near-black with a hotter red than Command Line and stark white used for literal comparison 'X' marks against competitor failures. This maximum-contrast pairing is deliberately combative: it creates desire through loss aversion, dramatizing exactly what a bad vendor costs before the red CTA offers the fix, matching the Outlaw archetype's disruptive, no-excuses tone.
+- *Why it creates desire:* The darkest, highest-contrast palette in the family — near-black with a hotter red than Netforge and stark white used for literal comparison 'X' marks against competitor failures. This maximum-contrast pairing is deliberately combative: it creates desire through loss aversion, dramatizing exactly what a bad vendor costs before the red CTA offers the fix, matching the Outlaw archetype's disruptive, no-excuses tone.
 
-### 6. Frontier (FRO)
+### 6. Nexora (FRO)
 
 **Live site:** [https://hdscfrontier.wordpress.com](https://hdscfrontier.wordpress.com)
 
@@ -165,7 +165,7 @@ HDSC as the partner for organizations expanding into new technical territory —
 - Background `#0E1B2B` · Surface `#15283D` · Primary `#FF8A3D` · Secondary `#2FD9C4` · Text `#F5FAFA`
 - *Why it creates desire:* The same dark-ground Sliver of Light family as Signal, but the light motif is reframed as a sunrise on the horizon rather than a rescue beam: warm orange rising against a deep teal-navy night sky, with a cooler teal secondary for growth and momentum. The palette creates desire through aspiration and opportunity-FOMO ('what's next') rather than urgency, fitting the Explorer archetype's scaling, forward-looking buyer.
 
-### 7. No Patience for Bureaucracy (NOP)
+### 7. Opsline (NOP)
 
 **Live site:** [https://hdscnopatience.wordpress.com](https://hdscnopatience.wordpress.com)
 
@@ -184,7 +184,7 @@ An irreverent, high-energy concept that pokes fun at slow government and enterpr
 - Background `#161616` · Surface `#202020` · Primary `#FF3B30` · Secondary `#FFD23F` · Text `#FAFAFA`
 - *Why it creates desire:* Shares the Redline family's dark-and-red DNA for brand cohesion, but adds an unexpected high-energy yellow accent that no other concept uses — a visual joke/jolt that matches the Jester archetype's irreverence toward slow bureaucracy. The yellow pop on red/black creates memorability and a sense of fun confidence, making the brand feel bold enough to make fun of the paperwork it still, credibly, completes.
 
-### 8. Built By (BLT)
+### 8. Stackcore (BLT)
 
 **Live site:** [https://hdscbuiltby.wordpress.com](https://hdscbuiltby.wordpress.com)
 
@@ -203,7 +203,7 @@ HDSC as a builder of custom technical solutions — software, infrastructure, an
 - Background `#0F1B2E` · Surface `#152440` · Primary `#2F6FD1` · Secondary `#FFB13C` · Text `#EAF2FF`
 - *Why it creates desire:* Shares Blueprint's navy/blue isometric base — signaling the same engineering credibility — but swaps the cool white-blue secondary for a warm amber 'build' accent, evoking a workshop lamp or solder-point glow. That warmth differentiates the Creator archetype's hands-on, custom-built promise from Blueprint's more formal documentation focus, while keeping both concepts recognizably part of the same engineering sub-family.
 
-### 9. Anyone's Engineer (ANE)
+### 9. Techwise (ANE)
 
 **Live site:** [https://hdscanyonesengineer.wordpress.com](https://hdscanyonesengineer.wordpress.com)
 
@@ -222,7 +222,7 @@ A plain, approachable concept presenting HDSC as straightforward, honest, and ac
 - Background `#FFFFFF` · Surface `#F3F5F8` · Primary `#1B3A6B` · Secondary `#3D8BFF` · Text `#1A1A1A`
 - *Why it creates desire:* A near-monochrome white/navy system with almost no ornamentation removes any sense of salesmanship or hype, which is itself the desire-creator for the Everyman buyer: the plainness reads as honesty. A single friendly mid-blue accent keeps CTAs warm and human rather than corporate, so the site feels like straightforward help, not a pitch.
 
-### 10. Level Up (LVL)
+### 10. Cloudspire (LVL)
 
 **Live site:** [https://hdsclevelup.wordpress.com](https://hdsclevelup.wordpress.com)
 
@@ -239,9 +239,9 @@ An experimental concept for the professional recruiting/marketplace side of HDSC
 
 **Color palette — Redline — Optimistic Progression:**
 - Background `#FFFFFF` · Surface `#F7F7FB` · Primary `#FF4D5E` · Secondary `#3DDC97` · Text `#1F2430`
-- *Why it creates desire:* A light, bright reinterpretation of the Redline family for a career-growth audience: a softened coral-red keeps brand lineage without Command Line's severity, paired with a leveling-up green and achievement gold used sparingly for milestones and badges. Light backgrounds and game-like accent colors create desire through aspiration and visible progress rather than urgency, matching the Innocent archetype's optimistic tone.
+- *Why it creates desire:* A light, bright reinterpretation of the Redline family for a career-growth audience: a softened coral-red keeps brand lineage without Netforge's severity, paired with a leveling-up green and achievement gold used sparingly for milestones and badges. Light backgrounds and game-like accent colors create desire through aspiration and visible progress rather than urgency, matching the Innocent archetype's optimistic tone.
 
-### 11. Plainly Put (PLP)
+### 11. Infrasync (PLP)
 
 **Live site:** [https://hdscplainlyput.wordpress.com](https://hdscplainlyput.wordpress.com)
 
@@ -258,9 +258,9 @@ A warm, relationship-first concept emphasizing genuine care and plain-spoken clo
 
 **Color palette — Figure Isolation — Warm Closeness:**
 - Background `#FBF5F0` · Surface `#F3E6DC` · Primary `#C4685A` · Secondary `#7B86C7` · Text `#332420`
-- *Why it creates desire:* Shares On Your Side's Figure Isolation visual family but shifts the balance from cool periwinkle to warm terracotta on a cream ground — the color-temperature equivalent of a closer, more personal relationship. Terracotta and warm cream read as human and devoted rather than corporate, creating desire through intimacy and genuine care for the Lover archetype's relationship-first positioning.
+- *Why it creates desire:* Shares Opshield's Figure Isolation visual family but shifts the balance from cool periwinkle to warm terracotta on a cream ground — the color-temperature equivalent of a closer, more personal relationship. Terracotta and warm cream read as human and devoted rather than corporate, creating desire through intimacy and genuine care for the Lover archetype's relationship-first positioning.
 
-### 12. The Standard (STD)
+### 12. Cybertrust (STD)
 
 **Live site:** [https://hdscthestandard0.wordpress.com](https://hdscthestandard0.wordpress.com)
 
@@ -279,7 +279,7 @@ HDSC as the disciplined, compliant, standards-driven authority — the concept b
 - Background `#FFFFFF` · Surface `#F4F5F7` · Primary `#0B2447` · Secondary `#C9A227` · Text `#0B0B0B`
 - *Why it creates desire:* The most formal palette in the family: stark white, authoritative deep navy, and a restrained gold used only for certification marks, seals, and verified-standard callouts. Gold is a universal signal of certification and quality in regulatory and compliance contexts, so its scarcity here (never used decoratively) creates desire through perceived rigor — exactly what the Ruler archetype needs to anchor the transactional marketplace and account product beneath it.
 
-### 13. The Enterprise Grid (ENT)
+### 13. Techgrid (ENT)
 
 **Live site:** [https://hdscenterprisegrid.wordpress.com](https://hdscenterprisegrid.wordpress.com)
 
