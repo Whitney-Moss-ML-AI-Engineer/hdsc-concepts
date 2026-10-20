@@ -1669,7 +1669,7 @@
     },
     {
      "title": "Program Management/Ancillary Services and Supplies",
-     "description": "The Contractor may provide ancillary support as necessary to offer an IT services-based solution. The ancillary support described here may only be included in a task order when it is integral to and necessary for the IT services-based effort. Ancillary support may include, but is not limited to: Clerical support Data entry services Program Management / Integration services Financial management services Logistics services Phase-In/transition management services Procurement services Physical and Cyber security management services Facilities Management services IT products services Minor alteration, and repair to real property services",
+     "description": "HDSC provides ancillary support as needed to deliver an IT services-based solution. The ancillary support described here may only be included in a task order when it is integral to and necessary for the IT services-based effort. Ancillary support may include, but is not limited to: Clerical support Data entry services Program Management / Integration services Financial management services Logistics services Phase-In/transition management services Procurement services Physical and Cyber security management services Facilities Management services IT products services Minor alteration, and repair to real property services",
      "naics": [
       "541512"
      ],
@@ -1789,7 +1789,7 @@
     },
     {
      "title": "Program Management/Ancillary Services",
-     "description": "The Contractor may provide ancillary support as necessary to offer an IT services-based solution. The ancillary support described here may only be included in a task order when it is integral to and necessary for the IT services-based effort. Ancillary support may include, but is not limited to: Clerical support services Data entry services Program Management / Integration services Financial management services Logistics services Phase-In/transition management services Procurement services Physical and Cyber security management services Facilities Management services IT products services Minor alteration, and repair to real property services",
+     "description": "HDSC provides ancillary support as needed to deliver an IT services-based solution. The ancillary support described here may only be included in a task order when it is integral to and necessary for the IT services-based effort. Ancillary support may include, but is not limited to: Clerical support services Data entry services Program Management / Integration services Financial management services Logistics services Phase-In/transition management services Procurement services Physical and Cyber security management services Facilities Management services IT products services Minor alteration, and repair to real property services",
      "naics": [
       "541512"
      ],
@@ -3414,5 +3414,5 @@
    "substitutions": "4 years of additional relevant experience may be substituted for education"
   }
  ],
- "codeNotes": "NAICS titles are 2022 NAICS. PSC titles are shortened from the current GSA PSC Manual (FY2021+ IT codes DA01-DK10 replace the retired D3xx series). Confirm codes against each solicitation before filing."
+ "codeNotes": "NAICS titles are 2022 NAICS. PSC titles are shortened from the GSA PSC Manual; the DA01-DK10 IT codes replaced the legacy D3xx series in FY2021. Codes are confirmed against each solicitation before an offer is submitted."
 }

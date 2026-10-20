@@ -68,16 +68,23 @@ def govcon():
     out += h(3, "Technical Functional Areas")
     for a in cat["federal"]["functionalAreas"]:
         inner = p(e(a["summary"]))
-        if a["subareas"]:
-            inner += ul([e(s["name"]) + (f" — {e(s['description'])}" if s["description"] else "") for s in a["subareas"]])
+        items = []
+        for s_ in a["subareas"]:
+            items.append(s_["name"])
+            d = s_["description"]
+            if d and len(d) < 70 and not d.endswith((".", ":")):  # second column of a two-column list
+                items.append(d)
+        items = list(dict.fromkeys(i for i in items if not i.endswith(":")))
+        if items: inner += ul([e(i) for i in items])
         inner += p("NAICS " + ", ".join(a["naics"]) + " · PSC " + ", ".join(a["psc"]))
         out += details(a["title"], inner)
+    first = lambda t: re.split(r"(?<=\.)\s", t.strip(), maxsplit=1)[0]
     for k in ("categoryA", "categoryB", "categoryC"):
         g = cat["federal"][k]
         out += h(3, f"{g['title']} (NAICS {g['naics']})")
         for a in g["areas"]:
-            inner = p(e(a["description"]))
-            if a.get("subareas"): inner += ul([e(s["name"]) for s in a["subareas"]])
+            inner = p(e(first(a["description"])))
+            if a.get("subareas"): inner += ul([e(s_["name"]) for s_ in a["subareas"]])
             inner += p("PSC " + ", ".join(a["psc"]))
             out += details(a["title"], inner)
     out += SEP + h(2, "Code Reference")
@@ -115,3 +122,58 @@ for cid in CONCEPTS:
     hp = hp.replace(" · WOSB</p>", "</p>")
     (d / "home.html").write_text(hp)
 print("built", len(CONCEPTS), "concepts")
+
+# ---- Chunked output for publishing through the WordPress block API ----
+def split_blocks(markup):
+    """Split serialized markup into top-level blocks."""
+    out, depth, cur = [], 0, []
+    for line in re.split(r'(?=<!-- /?wp:)', markup):
+        if not line.strip(): continue
+        m = re.match(r'<!-- (/?)wp:([a-z0-9/-]+)[^>]*?(/?)-->', line)
+        if m:
+            closing, selfclose = m.group(1) == '/', m.group(3) == '/'
+            if not closing and not selfclose: depth += 1
+            if closing: depth -= 1
+        cur.append(line)
+        if depth == 0:
+            out.append(''.join(cur)); cur = []
+    return out
+def chunk(markup, limit=18000):
+    blocks = split_blocks(markup); groups, cur = [], ''
+    for b in blocks:
+        if len(cur) + len(b) > limit and cur:
+            groups.append(cur); cur = ''
+        cur += b
+    if cur: groups.append(cur)
+    wrap = lambda s: '<!-- wp:group {"layout":{"type":"constrained"}} -->\n<div class="wp-block-group">' + s + '</div>\n<!-- /wp:group -->'
+    return [wrap(g) for g in groups]
+outdir = ROOT / "build"; outdir.mkdir(exist_ok=True)
+for name, body in pages.items():
+    parts = chunk(body)
+    for i, part in enumerate(parts):
+        (outdir / f"{name[:-5]}.{i:02d}.html").write_text(part)
+    print(name, len(parts), "chunks")
+
+# ---- Compact publish format: plain HTML in core/html blocks (smaller payloads for the API) ----
+def compact(markup):
+    s = re.sub(r'<!-- /?wp:[^>]*-->', '', markup)
+    s = re.sub(r' class="wp-block-[^"]*"', '', s)
+    s = re.sub(r'<figure><table>', '<table>', s).replace('</table></figure>', '</table>')
+    s = re.sub(r'\n\s*\n+', '\n', s).strip()
+    return s
+def html_chunks(markup, limit=22000):
+    s = compact(markup)
+    pieces = re.split(r'(?=<h[123]>|<details>)', s)
+    out, cur = [], ''
+    for pc in pieces:
+        if len(cur) + len(pc) > limit and cur:
+            out.append(cur); cur = ''
+        cur += pc
+    if cur: out.append(cur)
+    return ['<!-- wp:html -->\n' + c.strip() + '\n<!-- /wp:html -->' for c in out]
+pub = ROOT / "build" / "html"; pub.mkdir(parents=True, exist_ok=True)
+for name, body in pages.items():
+    parts = html_chunks(body)
+    for i, part in enumerate(parts):
+        (pub / f"{name[:-5]}.{i:02d}.html").write_text(part)
+    print("html", name, len(parts), [len(x) for x in parts])
