@@ -2,7 +2,7 @@
 
 This repository is the master catalog for Heavy Duty Security Co.'s (HDSC) 13 brand-concept exploration, built to test different brand positioning, messaging, and site experiences with real potential customers before committing to a single public brand direction.
 
-Each concept is a fully independent, published WordPress.com site with its own Home, Services, and Government Contracting pages, sharing a common CompTIA-grounded service catalog and government-contracting entity data, but differing in brand name, voice, visual theme, and positioning strategy.
+Each concept is a fully independent, published WordPress.com site with its own Home, Services, and Government Contracting pages, sharing a common HDSC service catalog and government-contracting entity data, but differing in brand name, voice, visual theme, and positioning strategy.
 
 ## Compare the concepts yourself
 
@@ -76,7 +76,7 @@ HDSC as the force that steps in and resolves the technology crisis before it bec
 
 **Hero headline:** "Engineered Infrastructure. Documented Discipline."
 
-**Subheadline:** Every engagement maps to an ITIL practice, a CompTIA-verified competency, and a measurable Six Sigma outcome.
+**Subheadline:** Every engagement maps to an ITIL practice, a documented technical scope, and a measurable Six Sigma outcome.
 
 HDSC as the engineering authority that documents, diagrams, and standardizes IT environments — a concept built around demonstrated technical mastery.
 
@@ -302,16 +302,19 @@ A concept built to match the visual language of HDSC's current live website: a d
 
 Every concept site shares the same underlying service catalog and government-contracting data so that the brand comparison is a fair test of messaging and experience, not of substance:
 
-- **Services page:** a condensed CompTIA-grounded capability catalog (Help Desk & End-User Support, Network Infrastructure & Engineering, Cybersecurity & Information Assurance, Threat Detection & Security Operations, and related categories).
-- **Government Contracting page:** NAICS/PSC/SIC/UNSPSC registration data for Heavy Duty Security Co., LLC (UEI Z6DLQLN43GD7, CAGE/NCAGE 6D7N5, WOSB), plus a placeholder entry for a second aerospace/defense entity pending final legal name, UEI, and CAGE/NCAGE codes.
+- **Services page:** all 30 priced services from the HDSC Service Catalog across five categories (General Security Controls & Architecture; Threats & Security Operations; Networking Concepts & Infrastructure; Endpoints & Operating Systems; Servers, Cloud & Databases), each with the $150 standard diagnostic fee and its NAICS/PSC codes.
+- **Careers page:** all 175 HDSC labor categories with descriptions, education, degree, experience and substitutions taken verbatim from the IT Service Labor Category Descriptions workbook.
+- **Government Contracting page:** NAICS/PSC/SIC/UNSPSC registration data for Heavy Duty Security Co., LLC (UEI Z6DLQLN43GD7, CAGE/NCAGE 6D7N5), a service-to-code and capability-to-code NAICS/PSC map, and the full capabilities outline (technical functional areas plus ITC/AV, enterprise-wide and mission-based categories), plus a placeholder entry for a second aerospace/defense entity pending final legal name, UEI, and CAGE/NCAGE codes.
 
 ## Repository structure
 
 ```
-concepts/           Per-concept content (Home / Services / Government Contracting / Security & Trust) in WordPress block markup
+concepts/           Per-concept content (Home / Services / Government Contracting / Careers / Security & Trust) in WordPress block markup
+data/hdsc-catalog.json  Single source for services, NAICS/PSC map, capabilities and labor categories
+tools/build_pages.py    Regenerates services, government-contracting and careers pages for all 13 concepts
 concepts-data.js    Structured data for all 13 concepts (summaries, headlines, CTAs, positioning strategy, etc.)
 govcon-data.js      Shared government-contracting entity and registration data
-service-catalog.js  Shared CompTIA-grounded service catalog
+service-catalog.js  Legacy service catalog (superseded by data/hdsc-catalog.json)
 ```
 
 ## Security

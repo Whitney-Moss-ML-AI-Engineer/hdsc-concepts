@@ -15,7 +15,7 @@ const ENTITIES = [
     cage: "6D7N5",
     ncage: "6D7N5",
     address: "3723 Minnesota Avenue, St. Louis, MO 63118",
-    designations: ["WOSB — Woman-Owned Small Business", "Small Business (SB)"],
+    designations: ["Small Business (SB)"],
     focus: "IT facilities management (primary service line), infrastructure monitoring, cybersecurity, systems/cloud engineering, network operations, and program management",
     activity: "Provides IT facilities management, infrastructure monitoring, cybersecurity, systems integration, network operations, and technical support services for commercial and government clients.",
     naics: {
@@ -30,8 +30,8 @@ const ENTITIES = [
     unspsc: ["81111800 — System and system component administration services", "81112000 — Data services", "81112200 — Software maintenance and support", "81112300 — Computer hardware maintenance and support", "81111500 — Software or hardware engineering", "80101500 — Business and corporate management consulting", "43211500 — Computers", "81111811 / 81111812 / 81111813 / 81111814 — IT infrastructure, data center, NOC and facilities-monitoring services †", "46171600 / 46171500 — Security monitoring and access control systems †", "43222500 / 43222600 / 43222800 — Network, data communication and IT peripheral equipment †"],
     nigp: ["92045 — Software maintenance and support †", "92050 — IT systems development services †", "92051 — IT systems analysis & design †", "92536 — Facilities management services †"],
     priorityOrder: ["NAICS 561210 — Facilities Support Services", "NAICS 541513 — Computer Facilities Management (use 541519 where only 2022 NAICS is accepted)", "SIC 7376 — Computer Facilities Management Services", "UNSPSC 81111811 — IT infrastructure management †", "PSC D399 — IT & Telecom, Other"],
-    certificationsClaimed: ["NIST RMF / CSF alignment", "ITIL service-management practices", "PMI program/project management", "Agile / Scrum delivery", "ISO 27001-aligned practices", "NIST SP 800-53-aligned security practices (not FedRAMP authorized)", "CompTIA-certified technical staff (A+, Network+, Security+, Server+, Cloud+, CySA+, Project+, Data+/AI, DataSys+)"],
-    tradeOrgAlignment: ["IEEE", "ISACA", "CompTIA", "ITIL / AXELOS", "PMI"],
+    certificationsClaimed: ["NIST RMF / CSF alignment", "ITIL service-management practices", "PMI program/project management", "Agile / Scrum delivery", "ISO 27001-aligned practices", "NIST SP 800-53-aligned security practices (not FedRAMP authorized)"],
+    tradeOrgAlignment: ["IEEE", "ISACA", "ITIL / AXELOS", "PMI"],
   },
   {
     id: "entity2",
