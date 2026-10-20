@@ -109,11 +109,38 @@ def careers():
         out += details(f"{l['id']} · {l['title']}", inner)
     return out + FOOT
 
+def feedback():
+    """Customer feedback page. Responses land in WordPress Feedback; export the CSV and import it on the
+    Social Command Center Reputation page, where each response is scored for sentiment. Field labels must
+    stay in step with hdsc/reputation.py CSV_ALIASES."""
+    opts = ",".join([s["name"].replace("&", "and") for s in cat["services"]] + ["Other / not sure"])
+    form = ('[contact-form subject="HDSC service feedback" submit_button_text="Send feedback"]'
+            '[contact-field label="Your Name" type="name"/]'
+            '[contact-field label="Email" type="email" required="1"/]'
+            '[contact-field label="Company" type="text"/]'
+            f'[contact-field label="Which service did HDSC provide?" type="select" options="{opts}" required="1"/]'
+            '[contact-field label="How would you rate your experience? (1-5)" type="radio" '
+            'options="5 - Excellent,4 - Good,3 - Fair,2 - Poor,1 - Very poor" required="1"/]'
+            '[contact-field label="Tell us about your experience" type="textarea" required="1"/]'
+            '[contact-field label="HDSC may quote my comment on its website with my first name only" type="checkbox"/]'
+            '[/contact-form]')
+    out = h(1, "Rate Your Service")
+    out += p("Tell us how HDSC did. Our team reads every response, and each one is scored for sentiment in the "
+             "HDSC CRM so we can track response time, pricing, communication and the quality of our work. "
+             "If something went wrong, we will contact you to make it right.")
+    out += f"<!-- wp:shortcode -->\n{form}\n<!-- /wp:shortcode -->\n\n"
+    out += p("<strong>Privacy:</strong> your email is used only to match your service record and reply to you. "
+             "We do not publish your comment unless you check the box above.")
+    out += p(f"Need help now? Call {cat['company']['phone']}.")
+    return out + FOOT
+
 pages = {"services.html": services(), "government-contracting.html": govcon(), "careers.html": careers()}
+FEEDBACK = feedback()
 for cid in CONCEPTS:
     d = ROOT / "concepts" / cid
     for name, body in pages.items():
         (d / name).write_text(body)
+    (d / "feedback.html").write_text(FEEDBACK)
     hp = (d / "home.html").read_text()
     hp = re.sub(r'<!-- wp:heading \{"level":2\} -->\n<h2 class="wp-block-heading">CompTIA-Grounded Capabilities</h2>.*?<!-- /wp:list -->',
         h(2, "Services").rstrip() + "\n\n" + p("Diagnosis, repair and replacement for security, network, endpoint, server, cloud and database hardware and software. Every service call starts with the $150 standard diagnostic fee.").rstrip() + "\n\n" +
@@ -122,6 +149,8 @@ for cid in CONCEPTS:
     hp = hp.replace(" · WOSB</p>", "</p>")
     (d / "home.html").write_text(hp)
 print("built", len(CONCEPTS), "concepts")
+(ROOT / "build").mkdir(exist_ok=True)
+(ROOT / "build" / "feedback.wp.html").write_text(FEEDBACK)   # publish as-is; the shortcode block must keep its comments
 
 # ---- Chunked output for publishing through the WordPress block API ----
 def split_blocks(markup):
