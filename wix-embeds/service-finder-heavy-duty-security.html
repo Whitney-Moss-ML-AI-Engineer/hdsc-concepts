@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src https://www.wixapis.com https://api.hsforms.com; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>HDSC Service Finder</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -465,7 +467,9 @@ fieldset.vend { border: 0; padding: 0; margin: 0; min-width: 0 }
       hdsc_inquiry_ticket: ticket, hdsc_service_domain: sel.d.name, hdsc_service_area: sel.a.name,
       hdsc_service_subarea: sel.s.name, hdsc_services_requested: names.join("; "), hdsc_inquiry_engagement: b.engagement,
       hdsc_inquiry_timeline: b.timeline, hdsc_inquiry_budget: b.budget, hdsc_best_time_to_call: b.contact_time,
-      hdsc_lead_temperature: temp, hdsc_last_inquiry_date: String(today.getTime()) };
+      hdsc_lead_temperature: temp, hdsc_last_inquiry_date: String(today.getTime()),
+      message: [b.details || "", b.technologies && b.technologies.length ? "Technology in use: " + b.technologies.join(", ") : "",
+        "Submitted from: " + (CFG.source || "web")].filter(Boolean).join("\n").slice(0, 4000) };
     var fields = Object.keys(f).filter(function (k) { return f[k]; }).map(function (k) { return { objectTypeId: "0-1", name: k, value: String(f[k]) }; });
     try {
       fetch("https://api.hsforms.com/submissions/v3/integration/submit/" + hs.portalId + "/" + hs.formGuid, {
